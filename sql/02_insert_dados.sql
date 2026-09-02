@@ -1,7 +1,8 @@
 USE pi_sarampo;
 
 -- =====================================================
--- MUNICÍPIOS
+-- Foram inseridos dados referentes a municípios, 
+cobertura vacinal, notificações e imigração.
 -- =====================================================
 
 INSERT INTO municipios
