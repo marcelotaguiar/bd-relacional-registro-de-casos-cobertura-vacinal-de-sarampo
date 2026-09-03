@@ -27,3 +27,6 @@ GROUP BY
     c.cobertura_d1,
     c.cobertura_d2,
     c.atingiu_meta;
+
+-- Teste da View
+SELECT * FROM vw_monitoramento_sarampo;
