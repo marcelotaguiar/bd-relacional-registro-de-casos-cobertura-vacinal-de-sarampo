@@ -84,5 +84,18 @@ O banco é composto por 4 tabelas principais interconectadas, aplicando restriç
 *   **Padrão de Modelagem:** Modelo Relacional (Chaves Primárias e Estrangeiras)
 *   **Compatibilidade:** Desenvolvido seguindo padrões amplamente aceitos por SGBDs como MySQL, MariaDB e PostgreSQL.
 
+## Estrutura do Projeto
+projeto-integrador/
+│
+├── README.md
+├── docs/
+├── sql/
+└── diagramas/
+
+## Como Executar
+1. Criar o banco de dados.
+2. Executar o script de criação das tabelas.
+3. Executar os inserts.
+4. Executar as consultas SQL.
 
 
