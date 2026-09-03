@@ -46,6 +46,7 @@ INNER JOIN cobertura_vacinal c
     ON m.id_municipio = c.id_municipio
 INNER JOIN notificacoes n
     ON m.id_municipio = n.id_municipio
+-- Ou pode se usar: c.cobertura_d2 < 95
 WHERE c.atingiu_meta = FALSE
 ORDER BY n.numero_casos DESC;
 
