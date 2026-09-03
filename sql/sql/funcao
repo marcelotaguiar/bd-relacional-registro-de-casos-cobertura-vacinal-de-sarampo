@@ -1,1 +1,22 @@
+DELIMITER $$
 
+CREATE FUNCTION fn_classificar_cobertura(cobertura DECIMAL(5,2))
+RETURNS VARCHAR(20)
+DETERMINISTIC
+BEGIN
+
+    DECLARE classificacao VARCHAR(20);
+
+    IF cobertura >= 95 THEN
+        SET classificacao = 'Adequada';
+    ELSEIF cobertura >= 80 THEN
+        SET classificacao = 'Moderada';
+    ELSE
+        SET classificacao = 'Baixa';
+    END IF;
+
+    RETURN classificacao;
+
+END $$
+
+DELIMITER ;
